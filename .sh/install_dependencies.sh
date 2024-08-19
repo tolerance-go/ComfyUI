@@ -1,6 +1,6 @@
 python -m venv venv
 
-.\venv\Scripts\Activate.ps1
+source ./venv/Scripts/activate
 
 # 安装 Python 依赖
 pip install -r requirements.txt
