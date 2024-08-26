@@ -3,6 +3,451 @@
   "last_link_id": 111,
   "nodes": [
     {
+      "id": 14,
+      "type": "ApplyFluxControlNet",
+      "pos": [
+        788.8334350585938,
+        1679
+      ],
+      "size": {
+        "0": 393,
+        "1": 78
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "controlnet",
+          "type": "FluxControlNet",
+          "link": 44,
+          "label": "controlnet"
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 110,
+          "slot_index": 1,
+          "label": "image"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "controlnet_condition",
+          "type": "ControlNetCondition",
+          "links": [
+            28
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "controlnet_condition"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ApplyFluxControlNet"
+      },
+      "widgets_values": [
+        0.7000000000000001
+      ]
+    },
+    {
+      "id": 6,
+      "type": "EmptyLatentImage",
+      "pos": [
+        866.8334350585938,
+        757
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            66
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "Latent"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        1
+      ]
+    },
+    {
+      "id": 46,
+      "type": "SaveImage",
+      "pos": [
+        866.8334350585938,
+        406
+      ],
+      "size": {
+        "0": 315,
+        "1": 270
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 111,
+          "label": "图像"
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "canny_process"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "CLIPTextEncodeFlux",
+      "pos": [
+        781.8334350585938,
+        1110
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 2,
+          "slot_index": 0,
+          "label": "CLIP"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            18
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "条件"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncodeFlux"
+      },
+      "widgets_values": [
+        "A beautiful woman with white hair and light freckles, her neck area bare and visible, capturing attention with her attitude, has modeled for an editorial magazine, captured in full body, fashion photography, within the scope of high future fashion, photographed by Alessio Albi.",
+        "A beautiful woman with white hair and light freckles, her neck area bare and visible, capturing attention with her attitude, has modeled for an editorial magazine, captured in full body, fashion photography, within the scope of high future fashion, photographed by Alessio Albi.",
+        4
+      ]
+    },
+    {
+      "id": 39,
+      "type": "PreviewImage",
+      "pos": [
+        971.8334350585938,
+        80
+      ],
+      "size": {
+        "0": 210,
+        "1": 246
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 109,
+          "label": "图像"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 8,
+      "type": "VAELoader",
+      "pos": [
+        1259.4334106445312,
+        80
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            7
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "ae.safetensors"
+      ]
+    },
+    {
+      "id": 7,
+      "type": "VAEDecode",
+      "pos": [
+        1624.4334106445312,
+        80
+      ],
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 6,
+          "slot_index": 0,
+          "label": "Latent"
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 7,
+          "label": "VAE"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            79,
+            101
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "图像"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      }
+    },
+    {
+      "id": 21,
+      "type": "PreviewImage",
+      "pos": [
+        2030.5847778320312,
+        80
+      ],
+      "size": {
+        "0": 210,
+        "1": 246
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 79,
+          "slot_index": 0,
+          "label": "图像"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 19,
+      "type": "CLIPTextEncodeFlux",
+      "pos": [
+        781.8334350585938,
+        1394
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 27,
+          "slot_index": 0,
+          "label": "CLIP"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            26
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "条件"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncodeFlux"
+      },
+      "widgets_values": [
+        "bad photo",
+        "bad photo",
+        4
+      ]
+    },
+    {
+      "id": 4,
+      "type": "DualCLIPLoader",
+      "pos": [
+        416.83343505859375,
+        80
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            2,
+            27
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "CLIP"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DualCLIPLoader"
+      },
+      "widgets_values": [
+        "clip_l.safetensors",
+        "t5xxl_fp16.safetensors",
+        "flux"
+      ]
+    },
+    {
+      "id": 47,
+      "type": "HEDPreprocessor",
+      "pos": [
+        416.83343505859375,
+        433.47058868408203
+      ],
+      "size": {
+        "0": 315,
+        "1": 82
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 108,
+          "label": "图像"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            109,
+            110,
+            111
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "图像"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "HEDPreprocessor"
+      },
+      "widgets_values": [
+        "enable",
+        1024
+      ]
+    },
+    {
+      "id": 13,
+      "type": "LoadFluxControlNet",
+      "pos": [
+        415,
+        266
+      ],
+      "size": {
+        "0": 316.83343505859375,
+        "1": 86.47058868408203
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "ControlNet",
+          "type": "FluxControlNet",
+          "links": [
+            44
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "ControlNet"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadFluxControlNet"
+      },
+      "widgets_values": [
+        "flux-dev",
+        "flux-hed-controlnet-v3.safetensors"
+      ]
+    },
+    {
       "id": 3,
       "type": "XlabsSampler",
       "pos": [
@@ -74,393 +519,6 @@
       ]
     },
     {
-      "id": 4,
-      "type": "DualCLIPLoader",
-      "pos": [
-        416.83343505859375,
-        80
-      ],
-      "size": {
-        "0": 315,
-        "1": 106
-      },
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            2,
-            27
-          ],
-          "slot_index": 0,
-          "shape": 3,
-          "label": "CLIP"
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "DualCLIPLoader"
-      },
-      "widgets_values": [
-        "clip_l.safetensors",
-        "t5xxl_fp16.safetensors",
-        "flux"
-      ]
-    },
-    {
-      "id": 5,
-      "type": "CLIPTextEncodeFlux",
-      "pos": [
-        781.8334350585938,
-        1110
-      ],
-      "size": {
-        "0": 400,
-        "1": 200
-      },
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 2,
-          "slot_index": 0,
-          "label": "CLIP"
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            18
-          ],
-          "slot_index": 0,
-          "shape": 3,
-          "label": "条件"
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CLIPTextEncodeFlux"
-      },
-      "widgets_values": [
-        "A beautiful woman with white hair and light freckles, her neck area bare and visible, capturing attention with her attitude, has modeled for an editorial magazine, captured in full body, fashion photography, within the scope of high future fashion, photographed by Alessio Albi.",
-        "A beautiful woman with white hair and light freckles, her neck area bare and visible, capturing attention with her attitude, has modeled for an editorial magazine, captured in full body, fashion photography, within the scope of high future fashion, photographed by Alessio Albi.",
-        4
-      ]
-    },
-    {
-      "id": 6,
-      "type": "EmptyLatentImage",
-      "pos": [
-        866.8334350585938,
-        757
-      ],
-      "size": {
-        "0": 315,
-        "1": 106
-      },
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            66
-          ],
-          "slot_index": 0,
-          "shape": 3,
-          "label": "Latent"
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "EmptyLatentImage"
-      },
-      "widgets_values": [
-        1024,
-        1024,
-        1
-      ]
-    },
-    {
-      "id": 7,
-      "type": "VAEDecode",
-      "pos": [
-        1624.4334106445312,
-        80
-      ],
-      "size": {
-        "0": 210,
-        "1": 46
-      },
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 6,
-          "slot_index": 0,
-          "label": "Latent"
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 7,
-          "label": "VAE"
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            79,
-            101
-          ],
-          "slot_index": 0,
-          "shape": 3,
-          "label": "图像"
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VAEDecode"
-      }
-    },
-    {
-      "id": 8,
-      "type": "VAELoader",
-      "pos": [
-        1259.4334106445312,
-        80
-      ],
-      "size": {
-        "0": 315,
-        "1": 58
-      },
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            7
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VAELoader"
-      },
-      "widgets_values": [
-        "ae.safetensors"
-      ]
-    },
-    {
-      "id": 13,
-      "type": "LoadFluxControlNet",
-      "pos": [
-        415,
-        266
-      ],
-      "size": {
-        "0": 316.83343505859375,
-        "1": 86.47058868408203
-      },
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "ControlNet",
-          "type": "FluxControlNet",
-          "links": [
-            44
-          ],
-          "slot_index": 0,
-          "shape": 3,
-          "label": "ControlNet"
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoadFluxControlNet"
-      },
-      "widgets_values": [
-        "flux-dev",
-        "flux-hed-controlnet-v3.safetensors"
-      ]
-    },
-    {
-      "id": 14,
-      "type": "ApplyFluxControlNet",
-      "pos": [
-        788.8334350585938,
-        1679
-      ],
-      "size": {
-        "0": 393,
-        "1": 78
-      },
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "controlnet",
-          "type": "FluxControlNet",
-          "link": 44,
-          "label": "controlnet"
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 110,
-          "slot_index": 1,
-          "label": "image"
-        }
-      ],
-      "outputs": [
-        {
-          "name": "controlnet_condition",
-          "type": "ControlNetCondition",
-          "links": [
-            28
-          ],
-          "slot_index": 0,
-          "shape": 3,
-          "label": "controlnet_condition"
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ApplyFluxControlNet"
-      },
-      "widgets_values": [
-        0.7000000000000001
-      ]
-    },
-    {
-      "id": 16,
-      "type": "LoadImage",
-      "pos": [
-        50,
-        80
-      ],
-      "size": {
-        "0": 315,
-        "1": 314
-      },
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            108
-          ],
-          "slot_index": 0,
-          "shape": 3,
-          "label": "图像"
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3,
-          "label": "遮罩"
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "5007.jpg",
-        "image"
-      ]
-    },
-    {
-      "id": 19,
-      "type": "CLIPTextEncodeFlux",
-      "pos": [
-        781.8334350585938,
-        1394
-      ],
-      "size": {
-        "0": 400,
-        "1": 200
-      },
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 27,
-          "slot_index": 0,
-          "label": "CLIP"
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            26
-          ],
-          "slot_index": 0,
-          "shape": 3,
-          "label": "条件"
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CLIPTextEncodeFlux"
-      },
-      "widgets_values": [
-        "bad photo",
-        "bad photo",
-        4
-      ]
-    },
-    {
-      "id": 21,
-      "type": "PreviewImage",
-      "pos": [
-        2030.5847778320312,
-        80
-      ],
-      "size": {
-        "0": 210,
-        "1": 246
-      },
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 79,
-          "slot_index": 0,
-          "label": "图像"
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      }
-    },
-    {
       "id": 23,
       "type": "SaveImage",
       "pos": [
@@ -522,102 +580,44 @@
       ]
     },
     {
-      "id": 39,
-      "type": "PreviewImage",
+      "id": 16,
+      "type": "LoadImage",
       "pos": [
-        971.8334350585938,
+        50,
         80
       ],
       "size": {
-        "0": 210,
-        "1": 246
-      },
-      "flags": {
-        "collapsed": false
-      },
-      "order": 9,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 109,
-          "label": "图像"
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      }
-    },
-    {
-      "id": 46,
-      "type": "SaveImage",
-      "pos": [
-        866.8334350585938,
-        406
-      ],
-      "size": {
         "0": 315,
-        "1": 270
+        "1": 314
       },
       "flags": {},
-      "order": 11,
+      "order": 5,
       "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 111,
-          "label": "图像"
-        }
-      ],
-      "properties": {},
-      "widgets_values": [
-        "canny_process"
-      ]
-    },
-    {
-      "id": 47,
-      "type": "HEDPreprocessor",
-      "pos": [
-        416.83343505859375,
-        433.47058868408203
-      ],
-      "size": {
-        "0": 315,
-        "1": 82
-      },
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 108,
-          "label": "图像"
-        }
-      ],
       "outputs": [
         {
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            109,
-            110,
-            111
+            108
           ],
           "slot_index": 0,
           "shape": 3,
           "label": "图像"
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3,
+          "label": "遮罩"
         }
       ],
       "properties": {
-        "Node name for S&R": "HEDPreprocessor"
+        "Node name for S&R": "LoadImage"
       },
       "widgets_values": [
-        "enable",
-        1024
+        "hed_input.webp",
+        "image"
       ]
     }
   ],
@@ -755,10 +755,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.6303940863128517,
+      "scale": 0.9090909090909091,
       "offset": [
-        -28.207754815474416,
-        56.71210661439279
+        226.21505689875377,
+        219.22863913301666
       ]
     }
   },
