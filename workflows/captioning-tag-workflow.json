@@ -1,0 +1,515 @@
+{
+  "last_node_id": 42,
+  "last_link_id": 44,
+  "nodes": [
+    {
+      "id": 18,
+      "type": "PreviewImage",
+      "pos": [
+        415,
+        80
+      ],
+      "size": {
+        "0": 423.00140380859375,
+        "1": 1519.603759765625
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 35,
+          "label": "图像"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 13,
+      "type": "LoadImagesFromFolderKJ",
+      "pos": [
+        50,
+        80
+      ],
+      "size": {
+        "0": 315,
+        "1": 166
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            35,
+            36
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "image"
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": null,
+          "shape": 3,
+          "label": "mask"
+        },
+        {
+          "name": "count",
+          "type": "INT",
+          "links": null,
+          "slot_index": 2,
+          "shape": 3,
+          "label": "count"
+        },
+        {
+          "name": "image_path",
+          "type": "STRING",
+          "links": [
+            21
+          ],
+          "slot_index": 3,
+          "shape": 3,
+          "label": "image_path"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImagesFromFolderKJ"
+      },
+      "widgets_values": [
+        "C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang",
+        20,
+        0
+      ]
+    },
+    {
+      "id": 11,
+      "type": "WD14Tagger|pysssss",
+      "pos": [
+        874,
+        312
+      ],
+      "size": {
+        "0": 364.1370544433594,
+        "1": 1775.1619873046875
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 36,
+          "label": "图像"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            19,
+            43
+          ],
+          "slot_index": 0,
+          "shape": 6,
+          "label": "字符串"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "WD14Tagger|pysssss"
+      },
+      "widgets_values": [
+        "wd-vit-tagger-v3",
+        0.35000000000000003,
+        0.85,
+        false,
+        false,
+        "",
+        "solo, black_hair, long_sleeves, 1boy, holding, upper_body, male_focus, indoors, cup, window, facial_hair, paper, mustache",
+        "solo, looking_at_viewer, shirt, black_hair, 1boy, hat, closed_mouth, brown_eyes, white_shirt, male_focus, blurry, black_headwear, blurry_background, facial_hair, portrait, beard, mustache, realistic, asian",
+        "solo, black_hair, 1boy, closed_mouth, male_focus, scarf, looking_to_the_side, facial_hair, portrait, beard, red_scarf, mustache, realistic",
+        "solo, black_hair, 1boy, closed_mouth, male_focus, blurry, black_eyes, from_side, blurry_background, profile, facial_hair, portrait, mustache, realistic",
+        "solo, short_hair, black_hair, 1boy, male_focus, facial_hair, portrait, beard, mustache, realistic",
+        "solo, black_hair, 1boy, closed_mouth, male_focus, facial_hair, portrait, beard, mustache, realistic, asian",
+        "solo, short_hair, black_hair, 1boy, male_focus, blurry, blurry_background, facial_hair, thick_eyebrows, half-closed_eyes, portrait, beard, close-up, mustache, realistic, asian",
+        "solo, smile, black_hair, 1boy, male_focus, parted_lips, black_eyes, blurry_background, facial_hair, portrait, mustache, realistic",
+        "solo, black_hair, 1boy, closed_mouth, male_focus, black_eyes, tattoo, facial_hair, facial_mark, black_background, portrait, mustache, realistic, asian",
+        "solo, black_hair, 1boy, upper_body, male_focus, parted_lips, facial_hair, half-closed_eyes, portrait, mustache, realistic, topknot, asian",
+        "solo, black_hair, 1boy, closed_mouth, male_focus, indoors, blurry, black_eyes, looking_to_the_side, blurry_background, facial_hair, portrait, beard, mustache, realistic, topknot, asian",
+        "solo, black_hair, 1boy, male_focus, facial_hair, portrait, beard, close-up, mustache, realistic, bald",
+        "solo, looking_at_viewer, 1boy, hat, male_focus, facial_hair, portrait, beard, mustache, realistic",
+        "solo, looking_at_viewer, black_hair, 1boy, hat, closed_mouth, male_focus, blurry, black_eyes, blurry_background, facial_hair, portrait, beard, mustache, realistic, korean_clothes, asian",
+        "solo, black_hair, 1boy, closed_mouth, closed_eyes, male_focus, dark_skin, hair_bun, facial_hair, dark-skinned_male, sleeping, single_hair_bun, portrait, facing_viewer, beard, mustache, realistic",
+        "solo, black_hair, hair_ornament, 1boy, closed_mouth, male_focus, hair_bun, black_eyes, facial_hair, single_hair_bun, portrait, beard, mustache, realistic, hair_stick, asian",
+        "solo, black_hair, 1boy, upper_body, male_focus, parted_lips, indoors, black_eyes, window, facial_hair, portrait, mustache, realistic, asian",
+        "solo, short_hair, black_hair, 1boy, closed_mouth, upper_body, closed_eyes, male_focus, indoors, cape, armor, window, facial_hair, shoulder_armor, breastplate, mustache, red_cape",
+        "solo, looking_at_viewer, black_hair, 1boy, upper_body, male_focus, black_eyes, facial_hair, chinese_clothes, beard, mustache, realistic, asian",
+        "solo, simple_background, black_hair, 1boy, jewelry, upper_body, male_focus, dark_skin, armor, facial_hair, bird, dark-skinned_male, shoulder_armor, beard, realistic"
+      ]
+    },
+    {
+      "id": 23,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1257,
+        453
+      ],
+      "size": {
+        "0": 506.6600341796875,
+        "1": 1628.666259765625
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 17,
+          "widget": {
+            "name": "text"
+          },
+          "label": "文本"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6,
+          "label": "字符串"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "单人，黑发，长袖服装，1名男孩，手持，上半身，男性视角，室内，杯子，窗户，面部毛孔，纸张，胡须",
+        "独自，注视着观众，衬衫，黑发，1男孩，帽子，闭合嘴唇，棕色眼睛，白衫，男性焦点，模糊，黑头饰，背景模糊，面部毛须，肖像，胡子，牛仔，亚洲人",
+        "单人，黑发，一个男孩，闭嘴，男性主角，围巾，侧面看着，脸部毛发，肖像画，胡子，红围巾，胡须，真实",
+        "单人, 黑发, 一男孩, 关闭嘴巴, 男性焦点,模糊的, 黑眼睛, 从侧面, 模糊背景, 轮廓, 面部胡子, 肖像, 胡须, 现实",
+        "单人照，短发，黑发，一个男孩，男性主题，面部毛发，肖像，胡子，胡须，现实",
+        "单人，黑发，1个男孩，闭嘴，男性焦点，面部胡须，肖像画，胡子，痰草，现实，亚洲",
+        "单人，短发，黑发，一男孩，男性焦点，模糊，背景模糊，面部毛发，浓密的眉毛，半关闭的眼睛，肖像，胡子，近景，胡须，现实，亚裔",
+        "单独、微笑、黑发、少年、男性主题、张开的嘴唇、黑眼、模糊的背景、面部毛发、肖像画、胡须、现实",
+        "单人, 黑发, 一男孩, 关闭嘴巴, 男性焦点, 黑眼睛, 牙骨, 面部毛, 面部标记, 黑色背景, 人像, 胡子, 现实主义, 亚洲",
+        "单人，黑发，1个男孩，上半身，男性焦点，嘴唇部分闭合，面部毛发，眼睛半闭合，肖像画，胡须，现实，顶髻，亚洲",
+        "以下是对用逗号分割的每个英文单词进行中文翻译并以逗号拼接返回的结果：\n\n一个人，黑发，1男孩，闭嘴，男性焦点，室内，模糊，黑眼睛，看向一侧，模糊背景，面部胡子，肖像，胡须，络腮胡，真实，顶髻，亚洲人",
+        "单人照，黑发，一个男孩，男性焦点，面部胡须，肖像，胸毛，近景，胡子，现实，光头。",
+        "独自，注视着观众，年纪轻轻的男性，帽子，男生专注的脸，胡须，肖像画，长胡子，胡须，小提琴",
+        "独自，注视着观众黑发1男孩帽子闭合嘴巴男性聚焦模糊黑眼模糊背景面部胡须肖像胡须大理想韩服亚洲人",
+        "独立，黑发，1个男孩，闭嘴，闭眼，男性焦点，黯色皮肤，发圈，面部毛髮，暗色肌肤的男性，睡觉，单独的发圈，头像，面向观众，胡子，胡须，看起来很现实。",
+        "个人照，黑发，发饰，一男孩，闭嘴，男性主角，发圈，黑眼珠，面部胡须，单发束头，人物画像，胡子，胡子，现实，发梳，东亚人",
+        "单人, 黑发, 一男孩, 上半身, 男性主角, 张开嘴唇, 室内, 黑眼睛, 窗户, 面部胡子, 肖像, 胡须, 现实主义, 亞洲人",
+        "单独，短发，黑发，一男孩，闭嘴，上半身，闭眼，男性焦点，室内，披肩，盔甲，窗户，面部毛发，肩甲，胸甲，胡子，红色披肩。",
+        "独自一人，注视着观众，黑发，1名男孩，上半身，男性焦点，黑眼睛，面部毛发，中国服装，胡须，胸毛，现实主义，亚洲人。",
+        "独立，简单背景，黑发，一个男孩，首饰，上身，男性焦点，暗色皮肤，盔甲，面部胡须，鸟类，黑皮肤的男性，肩膀护甲，鬍子，现实感"
+      ]
+    },
+    {
+      "id": 26,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1826,
+        691
+      ],
+      "size": {
+        "0": 365.4527282714844,
+        "1": 515.3670654296875
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 21,
+          "widget": {
+            "name": "text"
+          },
+          "label": "文本"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            42
+          ],
+          "slot_index": 0,
+          "shape": 6,
+          "label": "字符串"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\1.jpg,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\10.jpg,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\11.jpg,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\12.jpg,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\13.jpg,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\14.jpg,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\15.jpg,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\16.jpg,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\17.jpg,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\18.jpg,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\19.jpg,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\2.jpg,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\20.jpg,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\3.jpg,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\4.jpg,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\5.jpg,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\6.jpg,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\7.jpg,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\8.jpg,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\9.jpg"
+      ]
+    },
+    {
+      "id": 40,
+      "type": "ImagePathProcessorNode",
+      "pos": [
+        2249,
+        694
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image_paths",
+          "type": "STRING",
+          "link": 42,
+          "widget": {
+            "name": "image_paths"
+          },
+          "label": "image_paths"
+        },
+        {
+          "name": "tags",
+          "type": "STRING",
+          "link": 43,
+          "widget": {
+            "name": "tags"
+          },
+          "label": "tags"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_file_paths",
+          "type": "STRING",
+          "links": [
+            44
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "output_file_paths"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImagePathProcessorNode"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang"
+      ]
+    },
+    {
+      "id": 42,
+      "type": "ShowText|pysssss",
+      "pos": [
+        2614,
+        701
+      ],
+      "size": {
+        "0": 422.55535888671875,
+        "1": 189.8231964111328
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 44,
+          "widget": {
+            "name": "text"
+          },
+          "label": "文本"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6,
+          "label": "字符串"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\1.txt,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\10.txt,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\11.txt,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\12.txt,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\13.txt,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\14.txt,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\15.txt,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\16.txt,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\17.txt,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\18.txt,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\19.txt,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\2.txt,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\20.txt,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\3.txt,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\4.txt,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\5.txt,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\6.txt,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\7.txt,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\8.txt,C:\\Users\\yarnb\\Desktop\\songjiang\\image\\25_songjiang\\9.txt"
+      ]
+    },
+    {
+      "id": 21,
+      "type": "OllamaGenerateAdvance",
+      "pos": [
+        1439,
+        -64
+      ],
+      "size": {
+        "0": 400,
+        "1": 434
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "context",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "context"
+          },
+          "label": "context"
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "link": 19,
+          "widget": {
+            "name": "prompt"
+          },
+          "label": "prompt"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "response",
+          "type": "STRING",
+          "links": [
+            17
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "response"
+        },
+        {
+          "name": "context",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "context"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OllamaGenerateAdvance"
+      },
+      "widgets_values": [
+        "",
+        false,
+        "http://127.0.0.1:11434",
+        "llama3.1:8b",
+        "对用逗号分割的每段英文进行中文翻译\n翻译后再用逗号拼接返回\n返回结果的开头不要添加额外介绍内容，比如 以下是对用逗号分割的每个英文单词进行中文翻译并以逗号拼接返回的结果：或者 以下是翻译后的结果：",
+        1861708325,
+        "randomize",
+        40,
+        0.9,
+        0.8,
+        -1,
+        1,
+        5,
+        false,
+        ""
+      ]
+    }
+  ],
+  "links": [
+    [
+      17,
+      21,
+      0,
+      23,
+      0,
+      "STRING"
+    ],
+    [
+      19,
+      11,
+      0,
+      21,
+      1,
+      "STRING"
+    ],
+    [
+      21,
+      13,
+      3,
+      26,
+      0,
+      "STRING"
+    ],
+    [
+      35,
+      13,
+      0,
+      18,
+      0,
+      "IMAGE"
+    ],
+    [
+      36,
+      13,
+      0,
+      11,
+      0,
+      "IMAGE"
+    ],
+    [
+      42,
+      26,
+      0,
+      40,
+      0,
+      "STRING"
+    ],
+    [
+      43,
+      11,
+      0,
+      40,
+      1,
+      "STRING"
+    ],
+    [
+      44,
+      40,
+      0,
+      42,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.7513148009015783,
+      "offset": [
+        -68.35836897781985,
+        93.42411020662706
+      ]
+    }
+  },
+  "version": 0.4
+}
