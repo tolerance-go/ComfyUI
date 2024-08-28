@@ -1,0 +1,592 @@
+{
+  "last_node_id": 9,
+  "last_link_id": 14,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "Efficient Loader",
+      "pos": [
+        435,
+        213
+      ],
+      "size": {
+        "0": 410.7490539550781,
+        "1": 521.8607177734375
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "lora_stack",
+          "type": "LORA_STACK",
+          "link": 6,
+          "label": "LoRA堆"
+        },
+        {
+          "name": "cnet_stack",
+          "type": "CONTROL_NET_STACK",
+          "link": null,
+          "label": "ControlNet堆"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            8
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "模型"
+        },
+        {
+          "name": "CONDITIONING+",
+          "type": "CONDITIONING",
+          "links": [
+            9
+          ],
+          "slot_index": 1,
+          "shape": 3,
+          "label": "正面条件"
+        },
+        {
+          "name": "CONDITIONING-",
+          "type": "CONDITIONING",
+          "links": [
+            10
+          ],
+          "slot_index": 2,
+          "shape": 3,
+          "label": "负面条件"
+        },
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            11
+          ],
+          "slot_index": 3,
+          "shape": 3,
+          "label": "Latent"
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            12
+          ],
+          "slot_index": 4,
+          "shape": 3,
+          "label": "VAE"
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": null,
+          "shape": 3,
+          "label": "CLIP"
+        },
+        {
+          "name": "DEPENDENCIES",
+          "type": "DEPENDENCIES",
+          "links": null,
+          "shape": 3,
+          "label": "依赖"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Efficient Loader"
+      },
+      "widgets_values": [
+        "v1-5-pruned-emaonly.ckpt",
+        "Baked VAE",
+        -1,
+        "None",
+        0.97,
+        0.97,
+        "1body, solo",
+        "Bad design, worst quality, ",
+        "none",
+        "comfy",
+        512,
+        512,
+        1
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
+    },
+    {
+      "id": 3,
+      "type": "LoRA Stacker",
+      "pos": [
+        82,
+        213
+      ],
+      "size": {
+        "0": 315,
+        "1": 178
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "lora_stack",
+          "type": "LORA_STACK",
+          "link": null,
+          "label": "LoRA堆"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LORA_STACK",
+          "type": "LORA_STACK",
+          "links": [
+            6
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "LoRA堆"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoRA Stacker"
+      },
+      "widgets_values": [
+        "simple",
+        2,
+        "sd-1-5\\songjiang-000010.safetensors",
+        1,
+        1,
+        1,
+        "sd-1-5\\PixelArtRedmond15V-PixelArt-PIXARFK.safetensors",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1
+      ],
+      "color": "#222233",
+      "bgcolor": "#333355",
+      "shape": 1
+    },
+    {
+      "id": 8,
+      "type": "PrimitiveNode",
+      "pos": [
+        634,
+        786
+      ],
+      "size": {
+        "0": 210,
+        "1": 82
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            14
+          ],
+          "widget": {
+            "name": "seed"
+          }
+        }
+      ],
+      "title": "Primitive",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        594795105609271,
+        "randomize"
+      ]
+    },
+    {
+      "id": 7,
+      "type": "KSampler (Efficient)",
+      "pos": [
+        935,
+        232
+      ],
+      "size": [
+        325,
+        562
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 8,
+          "label": "模型"
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 9,
+          "label": "正面条件"
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 10,
+          "label": "负面条件"
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 11,
+          "label": "Latent"
+        },
+        {
+          "name": "optional_vae",
+          "type": "VAE",
+          "link": 12,
+          "label": "VAE(可选)"
+        },
+        {
+          "name": "script",
+          "type": "SCRIPT",
+          "link": null,
+          "label": "脚本"
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "link": 14,
+          "widget": {
+            "name": "seed"
+          },
+          "label": "随机种"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": null,
+          "shape": 3,
+          "label": "模型"
+        },
+        {
+          "name": "CONDITIONING+",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3,
+          "label": "正面条件"
+        },
+        {
+          "name": "CONDITIONING-",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3,
+          "label": "负面条件"
+        },
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": null,
+          "shape": 3,
+          "label": "Latent"
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": null,
+          "shape": 3,
+          "label": "VAE"
+        },
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 5,
+          "shape": 3,
+          "label": "图像"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler (Efficient)"
+      },
+      "widgets_values": [
+        594795105609271,
+        null,
+        20,
+        7,
+        "euler",
+        "normal",
+        1,
+        "auto",
+        "true"
+      ],
+      "color": "#223322",
+      "bgcolor": "#335533",
+      "shape": 1
+    }
+  ],
+  "links": [
+    [
+      6,
+      3,
+      0,
+      1,
+      0,
+      "LORA_STACK"
+    ],
+    [
+      8,
+      1,
+      0,
+      7,
+      0,
+      "MODEL"
+    ],
+    [
+      9,
+      1,
+      1,
+      7,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      10,
+      1,
+      2,
+      7,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      11,
+      1,
+      3,
+      7,
+      3,
+      "LATENT"
+    ],
+    [
+      12,
+      1,
+      4,
+      7,
+      4,
+      "VAE"
+    ],
+    [
+      14,
+      8,
+      0,
+      7,
+      6,
+      "INT"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1,
+      "offset": [
+        -24.787675559332456,
+        -51.026303461341485
+      ]
+    }
+  },
+  "version": 0.4
+}
