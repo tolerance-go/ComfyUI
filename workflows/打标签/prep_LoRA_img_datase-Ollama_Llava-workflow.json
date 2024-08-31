@@ -1,0 +1,384 @@
+{
+  "last_node_id": 22,
+  "last_link_id": 38,
+  "nodes": [
+    {
+      "id": 17,
+      "type": "IF_DisplayText",
+      "pos": [
+        1008,
+        468
+      ],
+      "size": {
+        "0": 350.7435302734375,
+        "1": 226.0487823486328
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 33,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            21
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "IF_DisplayText"
+      },
+      "widgets_values": [
+        "",
+        "The image features a woman standing on a beach. She is wearing a bright blue crop top and patterned shorts, with her hair styled up. Her pose is relaxed, with one hand lightly touching the fabric of her shorts and the other resting at her side. The background shows a clear sky, a calm sea, and sandy terrain leading to what appears to be a pier or breakwater in the distance. The image features a young woman standing on a beach. She has long blonde hair and is looking directly at the camera with a neutral expression. She is wearing a white tank top and blue high-waisted shorts. In the background, there are rocky cliffs, a clear sky, and calm ocean waters. To the left of the image, there is a rocky outcrop with some green foliage. The overall color palette of the image includes warm tones from the sand and rocks, cooler hues from the water and sky, and the bright white of the woman's tank top. There are no visible texts or distinctive brands in the image. The image is a portrait of a woman posing on a beach. She stands against a clear sky with minimal clouds, and her gaze is directed off to the side. The woman has long blonde hair that cascades down her shoulders and back. She wears a sleeveless blue sports bra with white stripes at the sides, which provides a contrast to her skin. Her expression is neutral, and she appears relaxed.\n\nBehind her, there's a glimpse of the ocean with waves breaking on the shoreline, suggesting that the beach extends beyond what is visible in the frame. The setting sun casts a warm glow over the scene, enhancing the colors and atmosphere of the image. The image features a woman posing against a neutral background. She is wearing a light blue tank top with a pattern that could be polka dots or stars, paired with a darker blue sports bra. Her outfit suggests athletic wear. The woman has short blonde hair and is looking directly at the camera with a slight smile. She appears to be in mid-stride, indicating motion. In terms of aesthetics, the image seems to focus on fitness or sporty attire, as indicated by her clothing. There are no visible texts or logos on the clothing. The background is plain and does not detract from the subject. The image features a young woman standing confidently against a beach backdrop. She is wearing a light blue sports bra and navy blue leggings with white polka dots, paired with a teal tank top. Her athletic build is accentuated by the fitted clothing. She has blonde hair cascading down her shoulders and is looking directly at the camera with a slight smile.\n\nThe background of the image showcases a sandy beach with clear blue skies overhead. The woman's pose suggests she might be a model or promoting activewear, given the context of the sports bra. There are no visible texts or logos in the image. The overall composition of the image is balanced, with the woman centrally positioned and occupying a significant portion of the frame, while the background elements provide a contrasting yet complementary setting to her attire. The image shows a woman standing on a beach. She is wearing a blue and white patterned sports tank top and dark shorts, with her hair pulled back into a ponytail. Her pose is relaxed yet athletic, with one hand on her hip and the other resting by her side. Her expression is neutral with a slight smile. Behind her, the ocean extends to the horizon, meeting the sky at the horizon line. The beach has white sand, and there are no visible texts or brands in the image. The style of the photograph seems to be a professional portrait for advertising or fashion purposes. The image shows a woman posing in athletic attire. She is wearing a blue and white sports bra with matching shorts, showcasing her toned physique. Her posture is relaxed yet confident, with one hand on her hip and the other at her side. She has blonde hair styled straight and is looking off to the side with a slight smile.\n\nThe background of the image is blurred but appears to be an outdoor setting with a building in the distance and what looks like natural foliage. The lighting suggests it could be late afternoon or early evening, as there's a soft glow that seems to come from either the sun or artificial light sources not directly visible in the photo.\n\nThe woman is the central subject of the image, drawing attention with her sportswear and the casual yet poised stance she adopts. The background serves to highlight her presence but does not detract from her as the primary focus of the photograph. The image is a photograph featuring a young woman posing with a bicycle. She appears to be outdoors during the daytime, with a clear blue sky and calm sea in the background. The woman has long blonde hair and is wearing a sleeveless top with a floral pattern and shorts. She is smiling at the camera. Behind her, there's a dark blue bicycle with a black seat and handlebars, equipped with a rear rack.\n\nThe woman is standing in front of a beach setting with sand visible, suggesting she might be near the shoreline. The background consists of the sea extending into the horizon, where it meets the sky, and there are hints of buildings partially obscured by the haze. There's also a clear view of the blue sky and what appears to be a faint mist or haze over the water.\n\nThere is no visible text on the image. The style of the photograph seems casual and candid, possibly intended for a promotional or lifestyle context. The image is a studio portrait featuring a person modeling lingerie. The model appears to be a woman with blonde hair, wearing a light blue sports bra and matching shorts with a patterned design. She has a confident expression and is posing slightly to the left of the frame.\n\nThe background is neutral and out of focus, with the person highlighted by the lighting. The setting seems to be an indoor photography studio, as suggested by the plain wall in the backdrop. There are no texts or additional graphics present in the image. The image features a woman standing against a backdrop that appears to be an urban environment with a cyberpunk aesthetic. The woman is wearing a blue sports bra and white shorts with a geometric pattern. She has short blonde hair, and her pose suggests she's relaxed or at ease. Her expression is neutral, and she is looking directly at the camera.\n\nThe background has a mix of architectural elements that suggest futuristic or advanced design. There are tall structures with a metallic finish, some with glowing accents in blue and red hues. The lighting in the image is warm and ambient, casting soft shadows on the surfaces.\n\nKeywords: Cyberpunk, Sports Bra, Shorts, Female Model, Futuristic Clothing, Cityscape, Urban Environment. Woman in a blue and white sports tank top, standing against a plain background. A young woman with blonde hair stands confidently against a backdrop of a white wall, leaning slightly on it. She's wearing a sleeveless blue tank top and has a slight smile. Her right hand is casually placed on her hip, while her left arm hangs loosely by her side. Behind her, there's a hint of a blue structure with a wooden element on the right, partially obscured by her pose. The overall lighting in the image suggests an outdoor setting with bright, natural light. The image shows a person standing on what appears to be an urban street. The individual is wearing a blue tank top, white shorts with black polka dots, and white sneakers. They have short blonde hair and are looking directly at the camera with a slight smile. The background features a building with a facade that has a modern architectural design, including a large window with reflective glass and a darker-toned wall with a visible texture. There is no visible text or distinctive branding in the image. The style of the image is consistent with lifestyle or fashion photography, focusing on the attire and casual pose of the person against an urban backdrop. Woman, sports bra, athletic wear, running shorts, blue shirt, blue leggings, blue sports bra, woman wearing a sports bra. A young woman stands confidently against a blue wall. She is dressed in an athletic outfit, featuring a light blue sports bra, navy leggings, and matching blue shoes. Her blonde hair cascades down her back, and she sports a white headband. The woman has a slight smile on her face as she gazes directly at the camera. Her arms are relaxed by her sides. She is wearing a pair of vibrant blue sunglasses, which match her outfit. This is a color photograph featuring a woman standing in front of a bicycle. She is wearing blue sports apparel, including a tank top and shorts, with a patterned design on the tank top. The woman has light-colored hair styled up, wears blue sports bras, and her pose suggests that she's ready for an outdoor activity or exercise session. Her expression is neutral, and she seems to be in a casual setting, possibly outdoors during daylight given the bright lighting.\n\nThe bicycle behind her is partially visible; it has a sleek frame with blue accents, which matches her outfit. There are no significant background details apart from some indistinct foliage that suggests an outdoor environment. The overall aesthetic of the image is active and sporty, with a focus on fitness apparel and outdoor recreation. The image features a young woman standing on a beach, posing for the photo. She is wearing a blue tank top with white polka dots and denim shorts. Her hair is styled in loose waves, and she has a neutral expression on her face. Behind her, the ocean stretches out to the horizon, and there are no other people visible in the immediate vicinity. The woman's attire contrasts with the natural setting, creating an interesting juxtaposition. A young woman stands confidently on a bicycle, her athletic attire consisting of a turquoise sports bra and matching blue shorts adorned with white polka dots. Her body is poised in a side-profile stance, facing towards the left side of the image. The background, though blurred, suggests an urban setting with towering structures that are shrouded in a haze of light. The overall aesthetic of the image conveys a sense of dynamism and energy, capturing a moment of youthful exuberance against the backdrop of a bustling cityscape. The image displays a woman posing in athletic attire. She is wearing a sleeveless sports bra, cropped leggings with a floral pattern, and a pair of earrings. Her left hand rests on her hip while her right hand clasps a yellow item at her waist. The background is plain and does not provide any additional context or setting. The woman has short blonde hair and appears to be in a good mood as she smiles towards the camera. The image depicts a woman standing on a beach. She is wearing a blue cropped top and white shorts with a leopard print pattern. Her hair is blonde, styled in loose waves, and she has fair skin. She is looking directly at the camera with a slight smile on her face. In the background, there is a clear sky and calm water, indicating it might be early morning or late afternoon given the soft lighting. The overall aesthetic of the image is bright and vibrant, with a focus on outdoor leisure activities. The image features a woman standing against a light blue backdrop. She is wearing a cropped top and shorts with a polka dot pattern. Her pose is relaxed, with one hand on her hip and the other hanging by her side. The lighting highlights her muscular arms and the blue color of her clothing stands out against the background. Female model posing on beach. Bright blue sleeveless tank top with polka dots. Hair is swept to one side, revealing earrings. Smiling, looking directly at the camera. White sand underfoot. Ocean waves in background. Clear sky above. The image depicts a woman wearing a sleeveless, light blue crop top with a lace-like pattern. She has blonde hair and is looking directly at the camera with a slight smile. The background is a solid teal color, providing a contrast to her outfit. The overall style of the image suggests it might be a product shot or an advertisement showcasing athletic wear. There are no texts or additional elements visible in this image. The image shows a woman posing in front of a white wall. She is wearing a sleeveless, blue sports bra with a polka dot pattern and a matching pair of shorts. Her attire suggests an active or sporty lifestyle. She has blonde hair tied back and her gaze is directed towards the camera with a slight smile.\n\nThe background is minimalistic, featuring the white wall which contrasts with her colorful clothing. The lighting in the photo appears soft and diffused, casting gentle shadows on the wall behind her. The overall composition of the image gives it a clean and modern aesthetic. A woman stands confidently against a vibrant teal background. She is clad in a sleek blue tank top, which contrasts with the lush green trees behind her. Her hair is styled in loose waves, adding to the casual yet stylish vibe of the image. In her hand, she holds an energy weapon, hinting at a futuristic setting or a story involving science fiction elements. The woman's gaze is directed straight at the camera, engaging with the viewer directly. Her smile is warm and inviting, adding a touch of friendliness to the overall composition. A woman stands confidently against a blue wall. She's wearing a cropped, blue tank top adorned with white polka dots paired with a skirt featuring a leopard print pattern. Her gaze is directed straight ahead, and she exudes an air of assertiveness. The background, though minimalistic with just the wall, provides a striking contrast to her attire. The image features a woman standing against a blue background. She is wearing a light blue tank top and a high-waisted skirt with a pattern of polka dots. Her blonde hair cascades down her shoulders, and she's looking directly at the camera. The lighting in the photo suggests an indoor setting, possibly a studio, with a soft glow illuminating her from one side. There are no visible texts or additional elements in the image. The image is a photograph of a woman standing on a beach. She has short blonde hair and is wearing a blue dress with white polka dots. Her pose is relaxed, with her left leg crossed over her right knee. She's looking towards the camera with a neutral expression on her face.\n\nThe background features a coastal scene with sandy beaches, the ocean in the distance, and a clear sky above. The lighting suggests it could be late afternoon or early evening, given the soft, natural light. There are no texts present in the image. The image is a photograph of a person standing against a neutral background. This individual appears to be wearing a sporty, light blue sports bra and dark pants with a lighter blue pattern. They have blonde hair styled in loose waves, and their posture is relaxed with one hand on the hip and the other down by the side. The lighting casts soft shadows, giving the scene an even illumination. There are no texts or additional objects within the frame. A woman stands in front of a gray wall, her back to the camera. She is wearing a sports bra with a blue and white pattern. Her hair is pulled back and she has light skin. The background suggests an urban setting with architectural structures that have a metallic appearance."
+      ]
+    },
+    {
+      "id": 13,
+      "type": "CR Integer To String",
+      "pos": [
+        383,
+        739
+      ],
+      "size": {
+        "0": 315,
+        "1": 78
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "int_",
+          "type": "INT",
+          "link": 13,
+          "widget": {
+            "name": "int_"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            14
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Integer To String"
+      },
+      "widgets_values": [
+        0
+      ]
+    },
+    {
+      "id": 12,
+      "type": "ListCounter //Inspire",
+      "pos": [
+        -43,
+        746
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "signal",
+          "type": "*",
+          "link": 12
+        }
+      ],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            13
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ListCounter //Inspire"
+      },
+      "widgets_values": [
+        0
+      ]
+    },
+    {
+      "id": 9,
+      "type": "Save Text File",
+      "pos": [
+        992,
+        813
+      ],
+      "size": {
+        "0": 422.1818542480469,
+        "1": 199.73536682128906
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 21,
+          "widget": {
+            "name": "text"
+          }
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "link": 14,
+          "widget": {
+            "name": "filename_prefix"
+          }
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Save Text File"
+      },
+      "widgets_values": [
+        "",
+        "./ComfyUI/output/[time(%Y-%m-%d)]_llava",
+        "ComfyUI",
+        "_",
+        0,
+        ".txt",
+        "utf-8"
+      ]
+    },
+    {
+      "id": 20,
+      "type": "PreviewImage",
+      "pos": [
+        1022,
+        21
+      ],
+      "size": {
+        "0": 343.25274658203125,
+        "1": 305.0281066894531
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 38
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 6,
+      "type": "LoadImageListFromDir //Inspire",
+      "pos": [
+        -350,
+        460
+      ],
+      "size": {
+        "0": 315,
+        "1": 150
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            12,
+            37,
+            38
+          ],
+          "shape": 6,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImageListFromDir //Inspire"
+      },
+      "widgets_values": [
+        "C:\\Users\\Ben\\Desktop\\character_Allison\\images",
+        0,
+        0,
+        false
+      ]
+    },
+    {
+      "id": 21,
+      "type": "IF_ImagePrompt",
+      "pos": [
+        317,
+        166
+      ],
+      "size": {
+        "0": 400,
+        "1": 452
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 37
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Question",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "Response",
+          "type": "STRING",
+          "links": [
+            33
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "Negative",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "IF_ImagePrompt"
+      },
+      "widgets_values": [
+        "describe the image",
+        "localhost",
+        "11434",
+        "ollama",
+        "llava:latest",
+        "IF_PromptMKR_IMG",
+        "None",
+        "None",
+        "None",
+        0.7,
+        160,
+        600872538926522,
+        "randomize",
+        false,
+        false
+      ]
+    }
+  ],
+  "links": [
+    [
+      12,
+      6,
+      0,
+      12,
+      0,
+      "*"
+    ],
+    [
+      13,
+      12,
+      0,
+      13,
+      0,
+      "INT"
+    ],
+    [
+      14,
+      13,
+      0,
+      9,
+      1,
+      "STRING"
+    ],
+    [
+      21,
+      17,
+      0,
+      9,
+      0,
+      "STRING"
+    ],
+    [
+      33,
+      21,
+      1,
+      17,
+      0,
+      "STRING"
+    ],
+    [
+      37,
+      6,
+      0,
+      21,
+      0,
+      "IMAGE"
+    ],
+    [
+      38,
+      6,
+      0,
+      20,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1.1,
+      "offset": [
+        145.68901432546295,
+        -89.35354709686467
+      ]
+    }
+  },
+  "version": 0.4
+}
